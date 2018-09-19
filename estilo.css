@@ -35,6 +35,20 @@ header>div h1 {
 }
 header>div nav {
    display: none;
+   margin-right: 55px;
+}
+header>div nav a, header>div nav span {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 12pt;
+}
+header>div nav span {
+    width: 1px;
+    height: 10px;
+    background-color: white;
+    font-weight: none; 
 }
 
 header img{
@@ -114,9 +128,31 @@ color: gray;
 
     
 }
-@media screen and (min-width:640px){
-
+@media screen and (min-width:990px){
+    header {
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    header>div {
+        max-width: 990px;
+        width: 100%;
+        padding: 0 27px;
+    }
+    header>div div h1 {
+        font-size: 18pt;
+    }
+    #hamburguer {
+        display: none;
+    }
+    header>div nav {
+        display: block;
+    }
+    header img{
+        height: 40px;
+    }
 }
-/* .titulo{
- bottom:30px;
-} */
+@media screen and (min-width:1200px) {
+    header>div {
+        max-width: 1200px;
+    }
+}
