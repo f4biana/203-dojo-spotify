@@ -2,7 +2,7 @@ body{
     margin: 0;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient( pink , yellow);
+    background-image: linear-gradient( rgba(250, 140, 182) , yellow);
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -67,37 +67,40 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    height: 100vh;
     flex-direction: column;
+    padding: 0 25px;
+}
+section p:first-child {
+    font-size: 34pt;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 25px;
+}
+section p:nth-child(2) {
+    font-size: 13pt;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 35px;
 }
 
-
-
-.botao {
-    width: 270px;
-    height: 50px;
+button {
+    width: 300px;
+    height: 40px;
     background-color: green;
     border-radius:20px;
     color: white;
     border: 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
+    font-weight: bolder;
     text-transform: uppercase;
     padding: 10px 30px;
 }
-.titulo{
-    font-size: 15pt;
 
-}
-section p:first-child {
-    font-size: 40pt;
-    font-weight: bolder;
-    text-align: center;
-}
-section p:nth-child(2) {
-    font-size: 15pt;
-    text-align: center;
-}
+
 
 footer{
     display: flex;
