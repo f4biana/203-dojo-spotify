@@ -58,9 +58,7 @@ header img{
     height: 17px;
 }
 
-.icones {
-    height: 50px;
-}
+
 
 
 section{
@@ -88,9 +86,10 @@ section p:nth-child(2) {
 
 button {
     width: 300px;
-    height: 40px;
-    background-color: green;
-    border-radius:20px;
+    height: 45px;
+    background-color: rgb(43, 185, 43);
+    border-radius: 20px;
+    border: 2px solid rgb(43, 185, 43);
     color: white;
     border: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -100,7 +99,9 @@ button {
     padding: 10px 30px;
 }
 
-
+.icones {
+    height: 50px;
+}
 
 footer{
     display: flex;
@@ -131,6 +132,11 @@ color: gray;
 
     
 }
+@media screen and (min-width:740px) {
+    section p:first-child {
+        font-size: 48pt
+    }
+}
 @media screen and (min-width:990px){
     header {
         height: 80px;
@@ -152,6 +158,13 @@ color: gray;
     }
     header img{
         height: 40px;
+    }
+    section {
+        margin-top: 80px;
+        height: 90vh;
+    }
+    section p:first-child {
+        font-size: 55pt;
     }
 }
 @media screen and (min-width:1200px) {
